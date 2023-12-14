@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "sms-app-client"
+client_id = "949b85cc42635090af20351f83ad808e"
+application_url = "https://develops-strict-ferrari-sends.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,read_product_listings,write_script_tags,write_themes,write_checkouts,write_customers,write_orders,write_draft_orders,write_inventory,write_price_rules,write_discounts,write_gift_cards,write_shipping,read_products,read_script_tags,read_themes,read_checkouts,read_customers,read_orders,read_draft_orders,read_inventory,read_price_rules,read_discounts,read_gift_cards,read_shipping,read_analytics"
+
+[auth]
+redirect_urls = [
+  "https://develops-strict-ferrari-sends.trycloudflare.com/auth/callback",
+  "https://develops-strict-ferrari-sends.trycloudflare.com/auth/shopify/callback",
+  "https://develops-strict-ferrari-sends.trycloudflare.com/api/auth/callback",
+  "https://develops-strict-ferrari-sends.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "test-store200801.myshopify.com"
